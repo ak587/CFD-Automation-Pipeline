@@ -6,14 +6,14 @@ A comprehensive suite of Python automation tools designed to streamline Computat
 
 ## Project Highlights
 
-### 🎯 Key Capabilities
+### Key Capabilities
 
 - **Automated CFD Simulation Workflow**: Orchestrates ANSYS Fluent simulations without GUI interaction, enabling batch processing and high-performance computing integration
 - **Data Export & Processing**: Seamlessly extracts, processes, and analyzes CFD simulation results
 - **HPC Integration**: Manages data transfer between high-performance computing clusters and local systems for efficient result management
 - **Post-Processing Pipeline**: Implements sophisticated analysis functions for extracting actionable insights from raw simulation data
 
-### 💡 Technical Skills Demonstrated
+### Technical Skills Demonstrated
 
 - **Python Proficiency**: Full-stack Python development with focus on scientific computing
 - **Simulation Software Integration**: Working knowledge of ANSYS Fluent APIs and automation capabilities
@@ -36,11 +36,11 @@ A comprehensive suite of Python automation tools designed to streamline Computat
 
 ## Use Cases
 
-✅ **Batch Simulations**: Automate multiple CFD runs with different parameters  
-✅ **Result Analysis**: Rapidly extract and analyze key performance metrics  
-✅ **Workflow Integration**: Incorporate CFD into larger engineering pipelines  
-✅ **HPC Management**: Seamlessly work with remote computing resources  
-✅ **Data Extraction**: Automate tedious data export and formatting tasks  
+**Batch Simulations**: Automate multiple CFD runs with different parameters  
+**Result Analysis**: Rapidly extract and analyze key performance metrics  
+**Workflow Integration**: Incorporate CFD into larger engineering pipelines  
+**HPC Management**: Seamlessly work with remote computing resources  
+**Data Extraction**: Automate tedious data export and formatting tasks  
 
 ## What This Demonstrates
 
