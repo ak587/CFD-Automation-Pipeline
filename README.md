@@ -27,19 +27,23 @@ The pipeline generates three primary types of visualizations to characterize the
 
 1. Mach Profile Centerlines
 
-<p align="center">
-  <img src="Data-analysis_results/Field_variables/TI/Mach_Profile_Centerline.png" width="32%">
-  <img src="Data-analysis_results/Field_variables/Re/Mach_Profile_Centerline.png" width="32%">
-  <img src="Data-analysis_results/Field_variables/Temperature/Mach_Profile_Centerline.png" width="32%">
-</p>
+<table style="width: 100%; border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/TI/Mach_Profile_Centerline.png" width="100%"><br>Turbulence Intensity sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Re/Mach_Profile_Centerline.png" width="100%"><br><b>Reynolds number sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Temperature/Mach_Profile_Centerline.png" width="100%"><br>Temperature sweep</td>
+  </tr>
+</table>
 
 2. Normalized Stagnation Pressure Centerline
 
-<p align="center">
-  <img src="Data-analysis_results/Field_variables/TI/PressureStagnation_Profile_Centerline" width="32%">
-  <img src="Data-analysis_results/Field_variables/Re/PressureStagnation_Profile_Centerline" width="32%">
-  <img src="Data-analysis_results/Field_variables/Temperature/PressureStagnation_Profile_Centerline" width="32%">
-</p>
+<table style="width: 100%; border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/TI/PressureStagnation_Profile_Centerline" width="100%"><br>Turbulence Intensity sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Re/PressureStagnation_Profile_Centerline" width="100%"><br><b>Reynolds number sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Temperature/PressureStagnation_Profile_Centerline" width="100%"><br>Temperature sweep</td>
+  </tr>
+</table>
 
 These plots track the evolution of the flow along the $Z$-axis (flow direction).
 *   **What it shows**: The transition from inlet conditions through a perforated screen (at $z=0$) into the downstream recovery region.
@@ -49,19 +53,23 @@ These plots track the evolution of the flow along the $Z$-axis (flow direction).
 
 1. Mach Profile downstream
 
-<p align="center">
-  <img src="Data-analysis_results/Field_variables/TI/Mach_Profile_downstream" width="32%">
-  <img src="Data-analysis_results/Field_variables/Re/Mach_Profile_downstream" width="32%">
-  <img src="Data-analysis_results/Field_variables/Temperature/Mach_Profile_downstream" width="32%">
-</p>
+<table style="width: 100%; border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/TI/Mach_Profile_Downstream" width="100%"><br>Turbulence Intensity sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Re/Mach_Profile_Downstream" width="100%"><br><b>Reynolds number sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Temperature/Mach_Profile_Downstream" width="100%"><br>Temperature sweep</td>
+  </tr>
+</table>
 
 2. Normalized Stagnation Pressure downstream
 
-<p align="center">
-  <img src="Data-analysis_results/Field_variables/TI/PressureStagnation_Profile_downstream.png" width="32%">
-  <img src="Data-analysis_results/Field_variables/Re/PressureStagnation_Profile_downstream.png" width="32%">
-  <img src="Data-analysis_results/Field_variables/Temperature/PressureStagnation_Profile_downstream.png" width="32%">
-</p>
+<table style="width: 100%; border: none;">
+  <tr style="border: none;">
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/TI/PressureStagnation_Profile_Downstream.png" width="100%"><br>Turbulence Intensity sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Re/PressureStagnation_Profile_Downstream.png" width="100%"><br><b>Reynolds number sweep</td>
+    <td align="center" style="border: none;"><img src="Data-analysis_results/Field_variables/Temperature/PressureStagnation_Profile_Downstream.png" width="100%"><br>Temperature sweep</td>
+  </tr>
+</table>
 
 Flow data is extracted from 2D slices downstream of the disturbance.
 *   **Cartesian Profiles**: These 2D slices 1D (50mm) downstream of the screen show the periodic Mach deficits caused by the grid.
