@@ -46,14 +46,14 @@ def load_meshes():
     Mach_meshes_downstream_4d = [pv.read(file).combine() for file in Mach_files[36:42]]   
     Mach_meshes_downstream_5d = [pv.read(file).combine() for file in Mach_files[42:48]]   
 
-    Re_meshes_slice = [pv.read(file).combine() for file in Re_files[0:5]]
-    Re_meshes_upstream_1d = [pv.read(file).combine() for file in Re_files[5:10]]
-    Re_meshes_upstream_2d = [pv.read(file).combine() for file in Re_files[10:15]]
-    Re_meshes_downstream_1d = [pv.read(file).combine() for file in Re_files[15:20]]   
-    Re_meshes_downstream_2d = [pv.read(file).combine() for file in Re_files[20:25]]   
-    Re_meshes_downstream_3d = [pv.read(file).combine() for file in Re_files[25:30]]   
-    Re_meshes_downstream_4d = [pv.read(file).combine() for file in Re_files[30:35]]   
-    Re_meshes_downstream_5d = [pv.read(file).combine() for file in Re_files[35:40]]  
+    Re_meshes_slice = [pv.read(file).combine() for file in Re_files[1:5]]
+    Re_meshes_upstream_1d = [pv.read(file).combine() for file in Re_files[6:10]]
+    Re_meshes_upstream_2d = [pv.read(file).combine() for file in Re_files[11:15]]
+    Re_meshes_downstream_1d = [pv.read(file).combine() for file in Re_files[16:20]]   
+    Re_meshes_downstream_2d = [pv.read(file).combine() for file in Re_files[21:25]]   
+    Re_meshes_downstream_3d = [pv.read(file).combine() for file in Re_files[26:30]]   
+    Re_meshes_downstream_4d = [pv.read(file).combine() for file in Re_files[31:35]]   
+    Re_meshes_downstream_5d = [pv.read(file).combine() for file in Re_files[36:40]]  
 
     Temperature_meshes_slice = [pv.read(file).combine() for file in Temperature_files[0:6]]
     Temperature_meshes_upstream_1d = [pv.read(file).combine() for file in Temperature_files[6:12]]
@@ -213,7 +213,7 @@ def contour_plot(meshes_down, meshes_slice, field_name, labels, folder, subfolde
     colors = ['orange', 'green', 'blue', 'red', 'cyan', 'magenta']
     inlet_pressure = import_inlet_pressure(meshes_slice) if field_name == "PressureStagnation" else np.ones(len(meshes_slice))
     xi, yi, Xi, Yi = cartesian_meshgrid(meshes_down[0])
-    levels = np.linspace(1, 0.8, 20)
+    levels = 0.9
 
     # Variable Profile along X-axis
     for lvl in levels:
