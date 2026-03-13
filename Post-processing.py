@@ -30,6 +30,7 @@ for meshes_down, meshes_slice, labels, folder in zip(field_meshes_down, field_me
 # Pressure Contour downstream plots
 print(Re_meshes_downstream_1d[0].point_data.keys())
 (ROOT / "Data-analysis_results" / "Combined_Contour_plot" / "Re").mkdir(parents=True, exist_ok=True)
-contour_plot(Re_meshes_downstream_1d, Re_meshes_slice, "PressureStagnation", Re_labels, "testing", "Re")
+contour_plot(Re_meshes_downstream_1d, Re_meshes_slice, "PressureStagnation", Re_labels, "Combined_Contour_plot", "Re")
+
 
 
