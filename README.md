@@ -12,14 +12,13 @@ In industrial CFD workflows, analyzing dozens of design points manually is prone
 ## Key Features
 *   **Automated Data Extraction:** Python-driven generation of Fluent journal files (`.jou`) to batch-export CGNS data from 20+ simulation cases without manual GUI interaction.
 *   **High-Fidelity Interpolation:** Uses `SciPy` and `PyVista` to map unstructured CFD mesh data onto structured Cartesian and Polar grids for precise cross-case comparison.
-*   **Multi-Variate Analysis:** Systematically compares four key physical parameters:
-    *   **Mach Number ($M$)**
+*   **Multi-Variate Analysis:** Systematically compares three key physical parameters.
     *   **Reynolds Number ($Re$)**
     *   **Turbulence Intensity ($TI$)**
     *   **Stagnation Temperature ($T$)**
 *   **Advanced Visualization:** 
     *   **Centerline Profiles:** Capturing flow evolution across specific Z-locations.
-    *   **Downstream Wake Analysis:** Polar plots at specific radii to evaluate flow uniformity.
+    *   **Downstream field Analysis:** Polar plots at specific radii to evaluate flow uniformity.
     *   **Normalized Contours:** Comparison of stagnation pressure recovery ($P/P_{inlet}$).
 
 ## Tech Stack
@@ -28,12 +27,6 @@ In industrial CFD workflows, analyzing dozens of design points manually is prone
 *   **Data Handling:** NumPy, SciPy (Griddata interpolation)
 *   **Visualization:** Matplotlib (Multi-panel layouts), PyVista (VTK-based mesh processing)
 *   **Automation:** Subprocess (Fluent CLI integration), Pathlib
-
-To make your GitHub repository stand out to recruiters, the **Results & Discussion** section should read like a professional engineering report. This demonstrates that you don't just "run scripts," but you actually interpret the physical phenomena.
-
-Replace the previous Results section with this structured "Technical Analysis" format:
-
----
 
 ## 📊 Technical Analysis & Results
 The automated pipeline generates a 4x3 matrix of analytical plots, systematically evaluating the flow field's sensitivity to four physical parameters (**$Re, TI, T, M$**) across three distinct visualization perspectives.
@@ -60,14 +53,11 @@ The automated pipeline generates a 4x3 matrix of analytical plots, systematicall
     *   **Separation Zones:** The contours clearly map the "pressure islands" where energy loss is most significant. 
     *   **Temperature Effects:** Analysis shows that while Mach profiles remain relatively consistent across different temperatures, the stagnation pressure distribution shifts, reflecting changes in air density and kinematic viscosity.
 
----
----
-
 ## Repository Structure
 *   `Fluent_data_export.py`: Automates the ANSYS Fluent export process by generating journals and managing the CLI lifecycle.
 *   `Post_processing_functions.py`: The core engine containing interpolation logic, polar transformations, and specialized plotting routines.
-*   `Post-processing.py`: The entry point script that orchestrates the analysis for all study groups (Mach, TI, Re, Temp).
-*   `Fluent_local_no_gui.py`: A utility script for launching Fluent in background mode for high-performance computing (HPC) environments.
+*   `Post-processing.py`: The entry point script that orchestrates the analysis for all study groups (TI, Re, Temp).
+*   `Fluent_local_no_gui.py`: A utility script for launching Fluent in background mode for local environments.
 
 ## Engineering Insights Demonstrated
 *   **Efficiency:** Reduced post-processing time by ~90% compared to manual export methods.
