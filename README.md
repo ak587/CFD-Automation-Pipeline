@@ -36,27 +36,27 @@ CFD outputs are typically unstructured. This engine handles the heavy mathematic
 ---
 
 ## Automated Physics Extraction
-The pipeline autonomously generates multi-axis, comparative visualizations to extract physical insights without human intervention.
+The pipeline autonomously generates multi-axis, comparative visualizations to extract physical insights.
 > [Data_analysis_results](Data-analysis_results/)
 
-### 1. Spatial Wake Distortion (Contour Tracking)
-Tracks how the wake of a perforated screen shifts under different Reynolds numbers.
+### 1. Spatial Inlet Distortion at 1D downstream (Total Pressure)
+Tracks how the Total pressure of a perforated screen shifts under different Reynolds numbers.
 > ![0.90-PressureStagnation_Contour_plots](Data-analysis_results/Combined_Contour_plot/Re/0.90-PressureStagnation_Contour_plots.png)
 
-### 2. Azimuthal Non-Uniformity (Polar Profiles)
-Extracts Mach and Pressure fields at a constant radius ($r = 0.021m$) downstream to quantify flow distortion severity near duct walls.
+### 2. Cartesian and Azimuthal Non-Uniformity at 1D downstream
+Extracts Mach and Pressure fields at a vertical, horizontal and constant radius ($r = 0.021m$) 1D downstream to quantify flow distortion severity near duct walls.
 > ![Mach_Profile_Downstream](Data-analysis_results/Field_variables/Re/Mach_Profile_Downstream.png)
 > ![PressureStagnation_Profile_Downstream](Data-analysis_results/Field_variables/Re/PressureStagnation_Profile_Downstream.png)
 > 
 ### 3. Axial Flow Development (Centerline Tracking)
-Maps the exact location of local acceleration (Mach spikes) and subsequent recovery zones.
-> ![Mach_Profile_Centerline](Data-analysis_results/Field_variables/Re/Mach_Profile_Centerline.png)
+Maps the exact location of normalized pressure losses by sweeping the Reynolds number for qualitative analysis.
+> ![PressureStagnation_Profile_Centerline](Data-analysis_results/Field_variables/Re/PressureStagnation_Profile_Centerline.png)
 
 ---
 
 ## Usage & Execution
 
-Because this pipeline is designed for HPC environments, it is executed entirely via CLI.
+This pipeline is designed for both local and HPC environments, it is executed via CLI.
 
 **1. Data Extraction (Requires Ansys Fluent path):**
 ```bash
@@ -69,6 +69,7 @@ python Fluent_data_export.py
 python Post-processing.py
 ```
 *Outputs are automatically categorized and saved into structured directories under `/Data-analysis_results/`.*
+*Note: Ensure all the `.cgns` files are kept in `Data_analysis_files/(variable)/` folder.*
 
 ---
 
